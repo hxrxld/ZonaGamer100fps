@@ -1,0 +1,215 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+body {
+	font-family: arial;
+	background: #4b4c50;
+}
+header {
+	background: #0f0f10f7;
+}
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+header label:hover {
+	background: rgba(0,0,0,0.3);
+}
+#btn-menu{
+	display: none;
+}
+nav ul li{
+	list-style: none;
+	margin-left:23px;
+	margin-right: 23px;
+	padding: 0px;
+	margin-top: 21px;
+}
+
+nav{
+	height: 55px;
+	border-bottom: 1px solid black;
+	line-height: 20px;
+	padding: 0px;
+}
+nav ul{
+	display:flex;
+	flex-direction: row;
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+.amarillo{
+	color: yellow;
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+.amarillo:hover {
+	color: #d8d836;
+}
+.blanco:hover {
+	color:lightgray;
+}
+#none {
+	border-right: none;
+}
+
+.lock {
+	height: 330px;
+	width: 30%;
+    border-right: 3px solid #fff;
+	margin-top: 21px;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding-right: 11px;
+	float: left;
+	color: #fff;
+	text-align: center;
+}
+.lock p {
+	text-shadow: 1px  0px 0px gray,
+	0px  2px 0px gray,
+	-1px  0px 0px gray,
+	0px -1px 0px gray
+}
+
+@media (max-width: 1024px)  {
+	header label{
+		display: block;
+	}
+	nav ul{
+		position: absolute;
+		background: #0f0f10f7;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav li {
+		border-bottom: 1px solid white;
+		margin-bottom: 4px;
+	}
+
+	#btn-menu:checked ~ nav ul {
+		margin: 0;
+	}	
+	nav  {
+		height: 15px;
+	}
+	.lock{
+		width: 90%;
+		border-bottom: 3px solid #fff;
+		border-right: none;
+		border-left: 25px;
+	}
+}
+
+.slider {
+	width: 100%;
+	margin-bottom: : 0px;
+	overflow: hidden;
+	padding: 0px 0px;
+	margin-top: 0px;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	animation: cambio 12s infinite alternate;
+}
+.slider li {
+	list-style: none;
+}
+.slider img  {
+	max-width: 100%;
+	width: 9900px;
+
+}
+
+@keyframes cambio {
+	0% { margin-left: 0; }
+	30% { margin-left: 0; }
+
+	35% { margin-left: -100%; }
+	65% { margin-left: -100%; }
+
+	70% { margin-left: -200% }
+	100%{ margin-left: -200% }
+}
+
+
+footer {
+	padding-top: 10px;
+	width: 100%;
+	background: #202020;
+	color: white;
+	float: left;
+}
+
+.footer {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	padding: 20px;
+}
+.colum1 {
+	max-width: 600px;
+}
+.colum1 h1 {
+	font-size: 22px;
+}
+.colum1 p {
+font-size: 14px;
+color: #c7c7c7;
+margin-top: 20px;
+}
+.row {
+	margin-top: 20px;
+	display: flex;
+}
+.row img {
+	width: 36px;
+	height: 36px;
+}
+.row label {
+	margin-top: 10px;
+	margin-left: 20px;
+	max-width: 140px;
+}
+
+@media screen and (max-width: 1100px) {
+.footer {
+	flex-wrap: wrap;
+}
+	.colum1 {
+	margin-top: 40px;
+	
+	}
+}
+#plasta {
+	width: 100%;
+	background: #101010;
+	color: white;
+	display: flex;
+	padding: 5px;
+	height: 30px;
+	justify-content: center;
+}
+
+
